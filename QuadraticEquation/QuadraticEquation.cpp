@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+
 void ScanÑoefficient(float* a, float* b, float* c) {
 	*a = 0;
 	*b = 0;
@@ -16,11 +17,13 @@ void ScanÑoefficient(float* a, float* b, float* c) {
 	printf("Enter coefficient 'c': ");
 	scanf("%f", c);
 }
+
 void PrintRes(int numofres, float res1, float res2) {
 	if (numofres == 0) printf("\nThis equation has no real roots");
 	if (numofres == 1) printf("\nRoot of this equation is: x=%f", res1);
 	if (numofres == 2) printf("\nRoots of this equation are: x1=%f, x2=%f", res1, res2);
 }
+
 void SolveEquation(float a, float b, float c) {
 	float D = 0;
 	float res1 = 0;
@@ -38,6 +41,7 @@ void SolveEquation(float a, float b, float c) {
 	}
 	PrintRes(numofres, res1, res2);
 }
+
 int main(void) {
 	float a, b, c;
 	ScanÑoefficient(&a, &b, &c);
