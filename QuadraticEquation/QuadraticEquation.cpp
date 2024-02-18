@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-void Scan—oefficient(float* a, float* b, float* c) {
+void Scan√ëoefficient(float* a, float* b, float* c) {
 	*a = 0;
 	*b = 0;
 	*c = 0;
@@ -13,7 +13,7 @@ void Scan—oefficient(float* a, float* b, float* c) {
 	}
 	printf("Enter coefficient 'b': ");
 	scanf("%f", b);
-	printf("\nEnter coefficient 'c': ");
+	printf("Enter coefficient 'c': ");
 	scanf("%f", c);
 }
 void PrintRes(int numofres, float res1, float res2) {
@@ -40,7 +40,7 @@ void SolveEquation(float a, float b, float c) {
 }
 int main(void) {
 	float a, b, c;
-	Scan—oefficient(&a, &b, &c);
+	Scan√ëoefficient(&a, &b, &c);
 	SolveEquation(a, b, c);
 	return 0;
 }
